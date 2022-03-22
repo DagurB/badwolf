@@ -1,6 +1,9 @@
 Bad Wolf
 ========
 
+THIS IS A FORK THAT REMOVES THE BG
+-Dagurb
+
 A color scheme for Vim, pieced together by [Steve Losh](http://stevelosh.com/).
 
 There's still quite a lot of room for improvement (particularly in HTML) so feel
