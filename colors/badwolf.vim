@@ -129,14 +129,15 @@ function! s:HL(group, fg, ...)
 		endif
 	endif
 
-	if a:0 >= 1 && strlen(a:1)
-		if a:1 == 'bg'
-			let histring .= 'guibg=None ctermbg=None '
-		else
-			let c = get(s:bwc, a:1)
-			let histring .= 'guibg=#' . c[0] . ' ctermbg=' . c[1] . ' '
-		endif
-	endif
+	let histring .= 'guibg=None ctermbg=None '
+	" if a:0 >= 1 && strlen(a:1)
+	" 	let histring .= 'guibg=None ctermbg=None '
+		" if a:1 == 'bg'
+		" else
+		" 	let c = get(s:bwc, a:1)
+		" 	let histring .= 'guibg=#' . c[0] . ' ctermbg=' . c[1] . ' '
+		" endif
+	" endif
 
 	if a:0 >= 2 && strlen(a:2)
 		let histring .= 'gui=' . a:2 . ' cterm=' . a:2 . ' '
