@@ -193,9 +193,9 @@ call s:HL('CursorLine',   '', 'darkgravel', 'none')
 call s:HL('CursorColumn', '', 'darkgravel')
 call s:HL('ColorColumn',  '', 'darkgravel')
 
-call s:HL('TabLine', 'plain', s:tabline, 'none')
-call s:HL('TabLineFill', 'plain', s:tabline, 'none')
-call s:HL('TabLineSel', 'coal', 'tardis', 'none')
+call s:HL('TabLine', 'plain', 'bg', 'none')
+call s:HL('TabLineFill', 'plain', 'bg', 'none')
+call s:HL('TabLineSel', 'tardis', 'bg', 'bold')
 
 call s:HL('MatchParen', 'dalespale', 'darkgravel', 'bold')
 
@@ -210,8 +210,8 @@ call s:HL('IncSearch', 'coal', 'tardis',	'bold')
 
 call s:HL('Underlined', 'fg', '', 'underline')
 
-call s:HL('StatusLine',   'coal', 'tardis',		'bold')
-call s:HL('StatusLineNC', 'snow', 'deepgravel', 'bold')
+call s:HL('StatusLine',   'fg', '',		'bold')
+call s:HL('StatusLineNC', 'snow', '', 'none')
 
 call s:HL('Directory', 'dirtyblonde', '', 'bold')
 
@@ -232,7 +232,8 @@ call s:HL('Tag', '', '', 'bold')
 " }}}
 " Gutter {{{
 
-call s:HL('LineNr',		'mediumgravel', s:gutter)
+" call s:HL('LineNr',		'mediumgravel', s:gutter)
+call s:HL('LineNr',		'mediumgravel', 'bg')
 call s:HL('SignColumn', '',				s:gutter)
 call s:HL('FoldColumn', 'mediumgravel', s:gutter)
 
