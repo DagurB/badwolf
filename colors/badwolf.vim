@@ -131,7 +131,7 @@ function! s:HL(group, fg, ...)
 
 	if a:0 >= 1 && strlen(a:1)
 		if a:1 == 'bg'
-			let histring .= 'guibg=bg ctermbg=bg '
+			let histring .= 'guibg=None ctermbg=None '
 		else
 			let c = get(s:bwc, a:1)
 			let histring .= 'guibg=#' . c[0] . ' ctermbg=' . c[1] . ' '
