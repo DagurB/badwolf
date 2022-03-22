@@ -18,3 +18,9 @@ a comment in it with before/after screenshots!**
 
 [bad wolf issue tracker]: http://github.com/sjl/badwolf/issues
 [transparent wolf issue tracker]: http://github.com/sjl/badwolf/issues
+
+Screenshots
+-----------
+
+### Bad Wolf and Transparent Wolf
+![Screenshot](beforeafter.png)
